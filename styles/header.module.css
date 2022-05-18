@@ -26,11 +26,23 @@
   height: 1.1rem;
 }
 
+.zone:hover {
+  cursor: pointer;
+}
+
+.image:hover {
+  cursor: pointer;
+}
+
 .link {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 1%;
+}
+
+.link:hover {
+  cursor: pointer;
 }
 
 .li {
@@ -43,6 +55,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.lin:hover {
+  cursor: pointer;
 }
 
 .log {
@@ -148,6 +164,10 @@
   font-size: 1.1em;
 }
 
+.nal:hover {
+  cursor: pointer;
+}
+
 .active {
   width: 8%;
   text-align: center;
@@ -155,6 +175,10 @@
   font-weight: 600;
   margin: 1.5% 0 0 0;
   font-size: 1.1em;
+}
+
+.active:hover {
+  cursor: pointer;
 }
 
 .nax {
@@ -165,6 +189,10 @@
   font-size: 1.1em;
 }
 
+.nax:hover {
+  cursor: pointer;
+}
+
 .about {
   width: 40%;
   text-align: center;
@@ -173,12 +201,20 @@
   font-size: 1.1em;
 }
 
+.about:hover {
+  cursor: pointer;
+}
+
 .con {
   width: 42%;
   text-align: center;
   color: #fff;
   margin: 1.5% 0 0 0;
   font-size: 1.1em;
+}
+
+.con:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 992px) {

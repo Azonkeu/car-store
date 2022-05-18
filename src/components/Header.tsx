@@ -1,15 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLocationPin,
-  faTruck,
-  faPhoneFlip,
-  faRightToBracket,
-  faRightFromBracket,
-  faCartShopping,
-  faCaretDown,
-} from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 import styles from "../../styles/header.module.css";
 import { useRouter } from "next/router";
 
@@ -21,86 +12,74 @@ const Header = () => {
         <Link href="/">
           <p className={styles.zone}>
             Offer Zone Top Deals & Discounts
-            <FontAwesomeIcon
-              icon={faCartShopping}
-              style={{
-                width: "3%",
-                height: "2rem",
-                color: "white",
-                marginLeft: "2%",
-              }}
+            <Image
+              src="/cart-shopping-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="28%"
+              height="18rem"
             />
           </p>
         </Link>
         <Link href="/">
           <p className={styles.link}>
-            <FontAwesomeIcon
-              icon={faLocationPin}
-              style={{
-                width: "7%",
-                height: "2rem",
-                color: "white",
-                marginRight: "2.5%",
-              }}
+            <Image
+              src="/location-pin-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="25%"
+              height="16rem"
             />
             Select Location
           </p>
         </Link>
         <Link href="/">
           <p className={styles.link}>
-            <FontAwesomeIcon
-              icon={faTruck}
-              style={{
-                width: "11%",
-                height: "2rem",
-                color: "white",
-                marginRight: "2.5%",
-              }}
+            <Image
+              src="/truck-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="25%"
+              height="16rem"
             />
             Track Order
           </p>
         </Link>
         <Link href="/">
           <p className={styles.link}>
-            <FontAwesomeIcon
-              icon={faPhoneFlip}
-              style={{
-                width: "9%",
-                height: "2rem",
-                color: "white",
-                marginRight: "2.5%",
-              }}
+            <Image
+              src="/phone-flip-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="25%"
+              height="16rem"
             />
             001 234 5678
           </p>
         </Link>
         <Link href="/">
-          <p className={styles.li}>
-            <FontAwesomeIcon
-              icon={faRightToBracket}
-              style={{
-                width: "15%",
-                height: "2rem",
-                color: "white",
-                marginRight: "2.5%",
-              }}
+          <p className={styles.link}>
+            <Image
+              src="/right-to-bracket-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="25%"
+              height="16rem"
             />
             Log In
           </p>
         </Link>
         <Link href="/">
-          <a className={styles.lin}>
-            <FontAwesomeIcon
-              icon={faRightFromBracket}
-              style={{
-                width: "14%",
-                height: "2rem",
-                color: "white",
-                marginRight: "2.5%",
-              }}
+          <p className={styles.lin}>
+            <Image
+              src="/arrow-right-from-bracket-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="26%"
+              height="17rem"
             />
             Register
-          </a>
+          </p>
         </Link>
       </div>
       <div className={styles.log}>
@@ -120,14 +99,12 @@ const Header = () => {
             Search
           </button>
           <div className={styles.cart}>
-            <FontAwesomeIcon
-              icon={faCartShopping}
-              style={{
-                width: "45%",
-                height: "2rem",
-                color: "white",
-                marginLeft: "2%",
-              }}
+           <Image
+              src="/cart-shopping-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="35%"
+              height="24rem"
             />
           </div>
         </form>
@@ -136,18 +113,16 @@ const Header = () => {
         <div className={styles.navdiv}>
           <div className={styles.cat}>
             <Link href="/">
-            <p className={styles.tex}>
-              All Categories
-            </p>
+              <p className={styles.tex}>All Categories</p>
             </Link>
             <span className={styles.btn}>
-              <FontAwesomeIcon
-                icon={faCaretDown}
-                style={{
-                  width: "70%",
-                  color: "black",
-                }}
-              />
+            <Image
+              src="/caret-down-solid.svg"
+              alt="facebook icon"
+              className={styles.image}
+              width="16%"
+              height="12rem"
+            />
             </span>
           </div>
           <Link href="/">
@@ -167,24 +142,16 @@ const Header = () => {
             </p>
           </Link>
           <Link href="/">
-          <p className={styles.about}>
-            About Us
-          </p>
+            <p className={styles.about}>About Us</p>
           </Link>
           <Link href="/">
-          <p className={styles.nax}>
-            New Arrivals
-          </p>
+            <p className={styles.nax}>New Arrivals</p>
           </Link>
           <Link href="/">
-          <p className={styles.nal}>
-            Pages
-          </p>
+            <p className={styles.nal}>Pages</p>
           </Link>
           <Link href="/">
-          <p className={styles.con}>
-            Contact Us
-          </p>
+            <p className={styles.con}>Contact Us</p>
           </Link>
         </div>
       </nav>

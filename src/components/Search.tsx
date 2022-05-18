@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "../../styles/search.module.css";
 
 const Search = () => {
@@ -12,7 +13,15 @@ const Search = () => {
           placeholder="search"
           className={styles.inpt}
         />
-        <button type="button" className={styles.bt}></button>
+        <button type="button" className={styles.bt}>
+          <Image
+            src="/arrow-right-long-solid.svg"
+            alt="facebook icon"
+            className={styles.image}
+            width="35%"
+            height="22rem"
+          />
+        </button>
       </div>
       <span className={styles.spa}></span>
       <h3 className={styles.tex}>Price</h3>
