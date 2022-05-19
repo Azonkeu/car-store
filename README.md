@@ -6,7 +6,7 @@ the apis specified below.
 > [Design](https://w3layouts.com/template/electro-store-an-ecommerce-theme-bootstrap-template/)
 
 ## 🖥️ live Demo
-Here is the [live demo](https://lighthearted-capybara-afa019.netlify.app/).
+Here is the [live demo](https://abcxcarex.herokuapp.com/).
 
 ### Built With
 
